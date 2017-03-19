@@ -1,0 +1,70 @@
+.search_block{
+    display: flex;
+    float: right;
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+}
+.search{
+    display: none;
+}
+.h1-c,
+.h2-c,
+.h2-v{
+    font-size: 28px;
+}
+
+.autocomplete-result-search ul li{
+    width: 100%;
+}
+.logo:after{
+    content: url("../img/logo-thinner.png");
+}
+.btn-search:after{
+    content: url("../img/magnifier-icon18x18.png");
+}
+.btn-search:hover:after{
+    content: url("../img/magnifier-icon18x18-hover.png");
+}
+.btn-search{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.btn_add_place{
+    margin-left: 15px;
+}
+.btn_add_place:after{
+    content: url("../img/add-place-icon26x26.png");
+}
+.btn_add_place:hover:after{
+    content: url("../img/add-place-icon26x26-hover.png");
+}
+.block-social{
+    width: 100%;
+}
+.block-social:nth-child(1){
+    margin-bottom: 10px;
+}
+.sign_in_btn{
+    margin-left: 15px;
+    font-family: PT_Sans;
+}
+.bread-crumb a{
+    display: none;
+}
+.bread-crumb p{
+    display: none;
+}
+.bread-crumb span{
+    display: none;
+}
+.bread-crumb a.pre{
+    display: block;
+}
+.btn-filter{
+    margin-right: 0px;
+}
+
+

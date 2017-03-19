@@ -1,0 +1,32 @@
+.search_block{
+    width: calc(100% - 295px);
+}
+.select-city{
+    display: none;
+}
+.nav-bar1{
+    width: 100%
+}
+.right-block{
+    display: none;
+}
+.autocomplete-result-search ul li{
+    width: 33.3333333%;
+}
+.catalog-title{
+    height: 60px;
+}
+.catalog-title-name{
+    margin-left: 22px;
+}
+.catalog-list{
+    margin-left:0px;
+    padding-left: 22px;
+}
+.menu-info-cards{
+    justify-content: space-between;
+}
+.block-content-between .text{
+    width: 100%;
+    margin-top: 20px;
+}

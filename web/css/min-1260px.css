@@ -1,0 +1,41 @@
+.header{
+    width: 1260px;
+    margin: 0 auto;
+}
+.btn_br{
+    display: flex;
+    float: right;
+    width: 300px;
+    background-color: #cf4d43;
+    font-family: PT_Sans bold;
+    color: #ffffff;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.btn_br:hover{
+    background-color: #bc3737;
+}
+
+.block-content{
+    width: 1260px;
+    margin: 0 auto;
+}
+.block-cities{
+    width: 1260px;
+    margin: 0 auto;
+}
+.block-widgets{
+    width: 1260px;
+    margin: 0 auto;
+}
+.block-footer-content{
+    width: 1260px;
+    margin: 0 auto;
+}
+.menu-info-cards{
+    width: 1260px;
+    margin: 0 auto;
+}

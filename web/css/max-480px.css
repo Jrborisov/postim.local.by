@@ -1,0 +1,33 @@
+.header{
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+.block-content{
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.catalog-title-name{
+    font-size: 19px;
+}
+.catalog-list-item{
+    font-size: 16px;
+}
+.block-cities{
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+.menu-info-cards{
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+.h1-c,
+.h1-v,
+.h2-c,
+.h2-v{
+    font-size: 20px;
+}
+
+.block-social-icons{
+    width: auto;
+}

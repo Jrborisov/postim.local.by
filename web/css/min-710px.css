@@ -1,0 +1,42 @@
+.btn-search{
+    padding: 3px 0px 3px 0px;
+}
+.search_block{
+    padding-right: 2px;
+}
+.h1-c{
+    font-size: 30px;
+}
+.catalog-title-name{
+    font-size: 26px;
+}
+.card-block,
+.photo{
+    width: 100%;
+}
+.autocomplete-result-search ul li{
+    width: 50%;
+}
+.menu-inline li{
+    margin-right: 30px;
+}
+.btns-filter .btn-filter:nth-child(2){
+    display: none;
+}
+.btn2-menu{
+    height: 30px;
+    width: calc(50% - 100px);
+}
+.btn2-menu:hover {
+    color: #444444;
+    border-bottom: 0px;
+}
+.menu-btns-card{
+    height: 80px;
+}
+.n2{
+    display: none;
+}
+.btn-add-photo{
+    width: 120px;
+}
