@@ -37,6 +37,28 @@
 .n2{
     display: none;
 }
+.n1{
+    margin-right: 0px;
+}
 .btn-add-photo{
     width: 120px;
+}
+.block-review-content{
+    flex-direction: column;
+}
+.review-text{
+    margin-top: 20px;
+    width: 100%;
+}
+.rating-r{
+    margin-left: 0px;
+}
+.review-photo{
+    margin-left: 20px;
+}
+.review-footer-btn:first-child{
+    margin-left: 20px;
+}
+.block-btn-circle-share{
+    display: none;
 }

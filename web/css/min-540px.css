@@ -10,6 +10,7 @@
     display: none;
 }
 .h1-c,
+.h1-v,
 .h2-c,
 .h2-v{
     font-size: 28px;
@@ -66,5 +67,20 @@
 .btn-filter{
     margin-right: 0px;
 }
-
+.social-btn-share p{
+    display: none;
+}
+.review-photo{
+    width: 270px;
+    height: 190px;
+}
+.profile-user-reviews{
+    display: none;
+}
+.block-write-reviews{
+    position: fixed;
+    top: calc(100% - 90px);
+    left: 0px;
+    width: 100%;
+}
 

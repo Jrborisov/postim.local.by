@@ -29,8 +29,20 @@
     width: calc(100% - 60px);
     margin: 0 30px;
 }
-.nav-bar1{
+.nav-bar1,
+.block-content-between,
+.block-info-card,
+.block-write-reviews,
+.block-reviews,
+.review-show-more,
+.block-add-review{
     width: calc(100% - 315px);
+}
+.block-info-for-owner{
+    width: calc(100% - 345px);
+}
+.block-description-card{
+    width: calc(100% - 355px);
 }
 .card-block{
     width: calc((100% - 20px)/2 );

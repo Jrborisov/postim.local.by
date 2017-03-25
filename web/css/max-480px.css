@@ -25,9 +25,12 @@
 .h1-v,
 .h2-c,
 .h2-v{
-    font-size: 20px;
+    font-size: 28px;
 }
 
+.center-mx{
+    text-align: center;
+}
 .block-social-icons{
     width: auto;
 }
