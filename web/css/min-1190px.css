@@ -35,7 +35,9 @@
 .block-write-reviews,
 .block-reviews,
 .review-show-more,
-.block-add-review{
+.block-add-review,
+.block-photos-users,
+.block-photos-owner{
     width: calc(100% - 315px);
 }
 .block-info-for-owner{
@@ -89,4 +91,13 @@
 .n4,
 .n3{
     display: none;
+}
+.container-photo{
+    width: calc((100% - 20px)/2 );
+}
+.container-photo:nth-child(3n){
+    margin-right: 20px;
+}
+.container-photo:nth-child(2n){
+    margin-right: 0px;
 }

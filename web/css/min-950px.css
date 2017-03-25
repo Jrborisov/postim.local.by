@@ -11,7 +11,9 @@
 .block-write-reviews,
 .block-reviews,
 .review-show-more,
-.block-add-review{
+.block-add-review,
+.block-photos-users,
+.block-photos-owner{
     width: 100%
 }
 .block-info-for-owner{

@@ -1308,7 +1308,7 @@ body{
     margin-top: 30px;
     max-width: 940px;
 }
-.btn-write-reviews{
+.large-wide-button{
     width: 100%;
     background-color: #5f8dd8;
     display: flex;
@@ -1320,14 +1320,17 @@ body{
     border-radius: 0 0 3px 3px;
 
 }
-.btn-write-reviews p{
+.non-border{
+    border-top: 0px solid #5178b8;
+}
+.large-wide-button p{
     color: #ffffff;
     font-family: PT_Sans;
     font-size: 15px;
     border-bottom: 1px dotted #ffffff;
     height: 17px;
 }
-.btn-write-reviews:hover p{
+.large-wide-button:hover p{
     border-bottom: 0px ;
     height: 18px;
 }
@@ -1723,7 +1726,45 @@ body{
 }
 /*страница карточки товара end*/
 
-
+/*страница фотографии*/
+.block-photos-owner,
+.block-photos-users{
+    margin-top: 30px;
+    display: flex;
+    max-width: 940px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.container-photo{
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.container-photo:nth-child(3n){
+    margin-right: 0px;
+}
+.block-blackout{
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color:rgba(0, 0, 0, 0.4);
+    display: none;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+.container-photo:hover .block-blackout{
+    display: flex;
+}
+.avatar-user{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+/*страница фотографии end*/
 
 
 
