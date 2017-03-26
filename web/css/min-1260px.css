@@ -1,3 +1,8 @@
+.block-content,
+.block-cities,
+.block-widgets,
+.block-footer-content,
+.menu-info-cards,
 .header{
     width: 1260px;
     margin: 0 auto;
@@ -19,23 +24,3 @@
     background-color: #bc3737;
 }
 
-.block-content{
-    width: 1260px;
-    margin: 0 auto;
-}
-.block-cities{
-    width: 1260px;
-    margin: 0 auto;
-}
-.block-widgets{
-    width: 1260px;
-    margin: 0 auto;
-}
-.block-footer-content{
-    width: 1260px;
-    margin: 0 auto;
-}
-.menu-info-cards{
-    width: 1260px;
-    margin: 0 auto;
-}

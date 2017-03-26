@@ -79,7 +79,6 @@
 }
 .btn2-menu{
     height: 30px;
-    width: calc(50% - 80px);
 }
 .block-write-reviews{
     position: fixed;
@@ -92,14 +91,17 @@
     top: calc(100% - 60px);
     left: 0px;
     width: 100%;
+    margin-top: 0px;
 }
 .block-sort-reviews{
     flex-wrap: wrap;
     height: 60px;
     align-items:flex-start;
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 .btn-sort-reviews{
-    height: 40px;
+    height: 30px;
 }
 .btn-sort-reviews:last-child{
     width: 200px;
@@ -107,4 +109,10 @@
 }
 .btn-sort-reviews:hover{
     box-shadow: 0 0px 0 0 #a7c9ff;
+}
+.container-profile{
+    flex-direction: column;
+}
+.container-profile-info{
+    margin-top: 30px;
 }
