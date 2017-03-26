@@ -46,7 +46,8 @@
 .block-description-card{
     width: calc(100% - 355px);
 }
-.card-block{
+.card-block,
+.card-block-discount{
     width: calc((100% - 20px)/2 );
 }
 .photo{
@@ -91,6 +92,9 @@
 .n4,
 .n3{
     display: none;
+}
+.card-block-discount:nth-child(2n){
+    margin-right: 0px;
 }
 .container-photo{
     width: calc((100% - 20px)/2 );

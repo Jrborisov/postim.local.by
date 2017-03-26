@@ -11,7 +11,8 @@
     font-size: 26px;
 }
 .card-block,
-.photo{
+.photo,
+.card-block-discount{
     width: 100%;
 }
 .autocomplete-result-search ul li{
@@ -20,7 +21,7 @@
 .menu-inline li{
     margin-right: 30px;
 }
-.btns-filter .btn-filter:nth-child(2){
+.btns-filter .btn-filter:nth-child(3){
     display: none;
 }
 .btn2-menu{
@@ -47,7 +48,7 @@
     flex-direction: column;
 }
 .review-text{
-    margin-top: 20px;
+    margin-top: 15px;
     width: 100%;
 }
 .rating-r{
@@ -70,5 +71,8 @@
     margin-right: 0px;
 }
 .container-photo:nth-child(2n){
+    margin-right: 0px;
+}
+.card-block-discount{
     margin-right: 0px;
 }
