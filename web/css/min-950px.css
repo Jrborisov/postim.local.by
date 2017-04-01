@@ -14,13 +14,15 @@
 .block-add-review,
 .block-photos-users,
 .block-photos-owner,
-.block-issues{
+.block-issues,
+.block-сomments-post{
     width: 100%
 }
 .block-info-for-owner{
     width: calc(100% - 30px);
 }
-.block-description-card{
+.block-description-card,
+.container-post{
     width: calc(100% - 40px);
 }
 .right-block{

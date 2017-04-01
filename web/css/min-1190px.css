@@ -38,7 +38,8 @@
 .block-add-review,
 .block-photos-users,
 .block-photos-owner,
-.block-issues{
+.block-issues,
+.block-сomments-post{
     width: calc(100% - 315px);
 }
 .block-info-for-owner{

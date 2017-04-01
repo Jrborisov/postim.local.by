@@ -21,12 +21,6 @@
     width: calc(100% - 20px);
     margin: 0 10px;
 }
-.h1-c,
-.h1-v,
-.h2-c,
-.h2-v{
-    font-size: 28px;
-}
 
 .center-mx{
     text-align: center;

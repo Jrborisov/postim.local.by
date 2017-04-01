@@ -10,10 +10,13 @@
     display: none;
 }
 .h1-c,
-.h1-v,
-.h2-c,
-.h2-v{
+.h1-v{
     font-size: 28px;
+}
+.h2-c,
+.h2-v,
+.post-h2{
+    font-size: 26px;
 }
 
 .autocomplete-result-search ul li{
@@ -115,4 +118,26 @@
 }
 .container-profile-info{
     margin-top: 30px;
+}
+.pre-photo,
+.next-photo{
+    width: 32.5px
+}
+.pre-photo:after{
+    width: 12.5px;
+    height: 23px;
+    background: url("../img/icon-pre-25px.png") 0px 0;
+    content: '';
+}
+.next-photo:after{
+    width: 12.5px;
+    height: 23px;
+    background: url("../img/icon-next-25px.png") 12.5px 0;
+    content: '';
+}
+.pre-photo:hover:after{
+    background: url("../img/icon-pre-25px.png") 12.5px 0;
+}
+.next-photo:hover:after{
+    background: url("../img/icon-next-25px.png") 0px 0;
 }
