@@ -13,7 +13,8 @@
 .review-show-more,
 .block-add-review,
 .block-photos-users,
-.block-photos-owner{
+.block-photos-owner,
+.block-issues{
     width: 100%
 }
 .block-info-for-owner{
@@ -55,5 +56,20 @@
 }
 .btn-rule{
     margin-left: 0px;
+    margin-top: 20px;
+}
+.container-discount-photos{
+    width: calc(100% - 40px);
+    margin-right: 0px;
+}
+.container-discount{
+    flex-direction: column;
+}
+.container-discount-info{
+    margin-top: 30px;
+    width: calc(100% - 40px);
+    padding-bottom: 20px;
+}
+.container-bottom-btn{
     margin-top: 20px;
 }

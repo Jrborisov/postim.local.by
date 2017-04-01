@@ -2199,7 +2199,186 @@ body{
 }
 /*cтраница профиль пользователя end*/
 
+/*Страница скидки*/
+.container-discount{
+    display: flex;
+    margin-top: 30px;
+}
+.container-discount-photos{
+    padding: 20px;
+    margin-right: 20px;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 900px;
+    height: 440px;
+    box-shadow: 0px 2px 0px 0px #cdced0;
+}
+.discount-photos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+.container-photos-inside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+.pre-photo,
+.next-photo{
+    display: flex;
+    width: 75px;
+    height: 100%;
+    background-color: rgba(49, 12, 52, 0.1);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pre-photo:hover,
+.next-photo:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.pre-photo:after{
+    width: 25px;
+    height: 46px;
+    background: url("../img/icon-pre.png") 0px 0;
+    content: '';
+}
+.next-photo:after{
+    width: 25px;
+    height: 46px;
+    background: url("../img/icon-next.png") 25px 0;
+    content: '';
+}
+.pre-photo:hover:after{
+    background: url("../img/icon-pre.png") 25px 0;
+}
+.next-photo:hover:after{
+    background: url("../img/icon-next.png") 0px 0;
+}
+.container-discount-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 260px;
+    box-shadow: 0px 2px 0px 0px #cdced0;
+    border-radius: 3px;
+}
+.discount-info-time-left{
+    font-size: 16px;
+    color: #fe0614;
+    display: flex;
+    align-items: center;
+}
+.discount-info-time-left:before{
+    content: url("../img/icon-time-left.png");
+    height: 15px;
+    margin-right: 10px;
+}
+.discount-info-text{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #838da1;
+}
+.through{
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.discount-info-bold-text{
+    color: #444444;
+    font-family: PT_Sans bold;
+    margin-left: 8px;
+}
+.before-icon-user:before{
+    content: '';
+    background: url("../img/ava-icon.png") 0 0 no-repeat;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+    padding-right: 10px;
+}
+.before-icon-purse:before{
+    content: '';
+    background: url("../img/icon-purse.png") 0 0 no-repeat;
+    height: 15px;
+    width: 15px;
+    padding-right: 10px;
+}
+.container-bottom-btn{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -22px;
+}
+.blue-btn-40{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: PT_Sans;
+    border-radius: 0 0 3px 3px;
+    color: #ffffff;
+    border-top:2px solid #5178b8;
+    background-color: #5f8dd8;
+    height: 58px;
+    width: 100%;
+    cursor: pointer;
+}
+.blue-btn-40 p{
+    border-bottom: 1px dotted #ffffff;
+    padding-bottom: 2px;
+}
+.blue-btn-40:hover p{
+   border-bottom: 0px;
+    padding-bottom: 3px;
+}
+.block-description-card ul{
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    color: #838da1;
+    margin-left: 15px;
+}
+.block-description-card ul li{
+    margin-top: 10px;
+}
+.block-description-card ul li span{
+    color: #444444;
+}
 
+.block-description-card ul li:first-child{
+    margin-top: 0px;
+
+}
+.block-issues{
+    max-width: 940px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 0px 0px #cdced0;
+}
+.block-issues .container-write-comments{
+    border-top: 0px;
+}
+.block-issues .container-comment:first-child .comment-content{
+    border-top: 0px solid;
+}
+.total{
+    color: #6b778f;
+}
+/*Страница скидки end*/
 
 
 

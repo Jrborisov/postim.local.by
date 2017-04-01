@@ -37,7 +37,8 @@
 .review-show-more,
 .block-add-review,
 .block-photos-users,
-.block-photos-owner{
+.block-photos-owner,
+.block-issues{
     width: calc(100% - 315px);
 }
 .block-info-for-owner{
@@ -104,4 +105,7 @@
 }
 .container-photo:nth-child(2n){
     margin-right: 0px;
+}
+.container-discount-photos{
+    width: calc(100% - 355px);
 }
