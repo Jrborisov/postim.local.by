@@ -71,6 +71,7 @@ body{
 .menu-content{
     min-height: 100%;
 }
+
 .bottom-btn{
     position: absolute;
     top:calc(100% - 50px);
