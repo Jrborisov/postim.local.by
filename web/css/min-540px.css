@@ -9,6 +9,9 @@
 .search{
     display: none;
 }
+.block-auto-complete-search{
+    display: none;
+}
 .h1-c,
 .h1-v{
     font-size: 28px;

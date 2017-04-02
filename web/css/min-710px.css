@@ -24,6 +24,19 @@
 .btns-filter .btn-filter:nth-child(3){
     display: none;
 }
+.page-search{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    width: 100%;
+}
+.page-search .btn-filter{
+    margin: 0px;
+    text-align: center;
+}
+.page-search .btn-filter:nth-child(3){
+    display: flex;
+}
 .btn2-menu{
     height: 28px;
 }

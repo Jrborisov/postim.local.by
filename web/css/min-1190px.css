@@ -25,6 +25,9 @@
 .search_block{
     width: calc(100% - 570px);
 }
+.block-auto-complete-search{
+    width: calc(100% - 680px);
+}
 .block-content{
     width: calc(100% - 60px);
     margin: 0 30px;
