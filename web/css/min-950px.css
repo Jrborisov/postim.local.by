@@ -15,7 +15,8 @@
 .block-photos-users,
 .block-photos-owner,
 .block-issues,
-.block-сomments-post{
+.block-сomments-post,
+.block-news-container{
     width: 100%
 }
 .block-info-for-owner{
