@@ -1,4 +1,5 @@
-.header{
+.header,
+.header-selected-city{
     width: calc(100% - 20px);
     margin: 0 10px;
 }
@@ -86,4 +87,7 @@
     position: fixed;
     z-index: 10;
     top: calc(100% - 60px);
+}
+.selected-city{
+    font-size: 22px;
 }

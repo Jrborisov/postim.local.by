@@ -257,7 +257,8 @@ body{
     display: flex;
     position: fixed;
     z-index: 99;
-    width: 380px;
+    width: 420px;
+    margin-left: -20px;
     padding: 10px;
     background-color: #ffffff;
     top: 70px;
@@ -2501,6 +2502,67 @@ body{
 }
 /*страница новости end*/
 
+/*страница выбора города*/
+.container-selected-city{
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    overflow-y:scroll;
+    max-height: calc(100% + 100px);
+}
+.container-header-selected-city{
+    background-color: #3c5994;
+    height: 60px;
+    width: 100%;
+    display: block;
+}
+.header-selected-city{
+    width: 1260px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selected-city{
+    font-size: 24px;
+    color: #a7c9ff;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.selected-city:before{
+    content: url("../img/icon-selected-city.png");
+    margin-right: 25px;
+}
+.close-selected-city:after{
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    content: '';
+    background-image: url("../img/close-big-icon.png");
+    background-position: 0px 0;
+}
+.close-selected-city:hover:after{
+    background-position: 28px 0;
+}
+.container-body-selected-city{
+    background-color: #ffffff;
+}
+.container-body-selected-city .container-cities{
+    margin-top: 10px;
+    box-shadow: 0px 0px 0px 0px #cdced0;
+    border-radius: 0px;
+}
+.container-body-selected-city .block-cities{
+    padding-top: 0px;
+}
+/*страница выбора города end*/
 
 
 
