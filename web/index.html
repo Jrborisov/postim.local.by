@@ -79,12 +79,12 @@
           <li class="menu-category-item"><a>Коттеджи и усадьбы</a></li>
         </ul>
       </li>
-      <li class="menu-category-list menu-category-open">
+      <li class="menu-category-list">
         <div class="category-list-title">
           <a>Развлечения</a>
-          <span class="close-list-btn"></span>
+          <span class="open-list-btn"></span>
         </div>
-        <ul class="menu-category-items" style="height: 445px">
+        <ul class="menu-category-items">
           <li class="menu-category-item"><a>Все места</a></li>
           <li class="menu-category-item"><a>Отели</a></li>
           <li class="menu-category-item"><a>Коттеджи и усадьбы</a></li>
@@ -598,6 +598,7 @@
 
       $(document).on('click','.category-list-title',function () {
           if($(this).find('span').hasClass('open-list-btn')){
+              closeOpenCategoryItem();
               $(this).find('span').attr('class', 'close-list-btn');
               $(this).parent().addClass('menu-category-open');
               $(this).next(".menu-category-items").css('height', 'auto');
@@ -607,6 +608,18 @@
               $(this).next(".menu-category-items").css('height', '0');
           }
       });
+
+      function closeOpenCategoryItem(){
+          var items = $('.menu-category').find('.menu-category-list');
+          for(i = 0; i < items.length; i++){
+              if($(items[i]).hasClass('menu-category-open')) {
+                  $(items[i]).removeClass('menu-category-open');
+                  $(items[i]).find('.menu-category-items').css('height', '0');
+                  $(items[i]).find('.close-list-btn').attr('class', 'open-list-btn');
+                  break;
+              }
+          }
+      }
   })
 </script>
 <!--скрипт для меню end-->
