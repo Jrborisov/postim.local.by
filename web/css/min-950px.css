@@ -1,9 +1,7 @@
 .search_block{
     width: calc(100% - 295px);
 }
-.block-auto-complete-search{
-    width: calc(100% - 405px);
-}
+
 .select-city{
     display: none;
 }

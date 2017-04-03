@@ -3,6 +3,15 @@
     width: calc(100% - 60px);
     margin: 0 30px;
 }
+.open-search .search_block{
+    width: calc(100% - 144px);
+}
+.a-auto-complete,
+.block-auto-complete-header{
+    width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+}
 .block-footer-content{
     width: calc(100% - 60px);
     margin: 0 30px;
@@ -25,9 +34,6 @@
 }
 .search_block{
     width: calc(100% - 570px);
-}
-.block-auto-complete-search{
-    width: calc(100% - 680px);
 }
 .block-content{
     width: calc(100% - 60px);

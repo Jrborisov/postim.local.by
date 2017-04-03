@@ -9,8 +9,18 @@
 .search{
     display: none;
 }
-.block-auto-complete-search{
-    display: none;
+.open-search .search_block{
+    display: flex;
+    padding-left:20px;
+    float: right;
+    margin-top: 10px;
+    background-color: white;
+    height: 40px;
+    border-radius: 40px;
+}
+.open-search .search{
+    display: inherit;
+    width: calc(100% - 86px);
 }
 .h1-c,
 .h1-v{
@@ -39,6 +49,19 @@
     display: flex;
     align-items: center;
 }
+
+.open-search .btn-search{
+    float: right;
+    padding: 5px 3px 3px 3px;
+    cursor: pointer;
+}
+.open-search .btn-search:after{
+    content: url("../img/search-icon.png");
+}
+.open-search .btn-search:hover:after{
+    content: url("../img/search-icon-activ.png");
+}
+
 .btn_add_place{
     margin-left: 15px;
 }
