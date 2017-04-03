@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/main.css">
+  <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all">
   <link rel="stylesheet" media="(min-width: 1320px)" href="css/min-1260px.css">
   <link rel="stylesheet" media="(max-width:1319px)" href="css/min-1190px.css">
   <link rel="stylesheet" media="(max-width:949px)" href="css/min-950px.css">
@@ -586,16 +587,38 @@
 	          mainMenu.isOpen=false;
 	          $('.main-menu').animate({left:'-300px',top:'0px'},200);
           }
-      })
+      });
 
 	  $(document).click(function (e) {
 		  if ($(e.target).closest(".main-menu,.menu-btn").length) return;
 		  mainMenu.isOpen=false;
 		  $('.main-menu').animate({left:'-300px',top:'0px'},200);
 		  e.stopPropagation();
-	  })
+	  });
+
+      $(document).on('click','.category-list-title',function () {
+          if($(this).find('span').hasClass('open-list-btn')){
+              $(this).find('span').attr('class', 'close-list-btn');
+              $(this).parent().addClass('menu-category-open');
+              $(this).next(".menu-category-items").css('height', 'auto');
+          } else {
+              $(this).find('span').attr('class', 'open-list-btn');
+              $(this).parent().removeClass('menu-category-open');
+              $(this).next(".menu-category-items").css('height', '0');
+          }
+      });
   })
 </script>
 <!--скрипт для меню end-->
+
+<!-- скрипты для кроссбраузерного скрола меню -->
+<script type="text/javascript" src="js/libs/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/libs/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu-content').jScrollPane({autoReinitialise: true});
+    });
+</script>
+<!-- скрипты для кроссбраузерного скрола меню end -->
 </body>
 </html>

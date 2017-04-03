@@ -67,9 +67,10 @@ body{
 }
 .menu-category{
     margin-top: 25px;
+    margin-right: 8px;
 }
 .menu-content{
-    min-height: 100%;
+    height:calc(100% - 60px);
 }
 
 .bottom-btn{
