@@ -167,3 +167,7 @@
 .next-photo:hover:after{
     background: url("../img/icon-next-25px.png") 0px 0;
 }
+
+.news-item{
+    width: 100%;
+}
