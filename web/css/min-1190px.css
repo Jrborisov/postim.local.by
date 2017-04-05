@@ -127,10 +127,3 @@
 .block-news-container .card-block:nth-child(2n){
     margin-right: 0px;
 }
-
-.news-item{
-    width: calc((100% - 60px)/4);
-}
-.news-item:nth-child(4n){
-    margin-right: 0;
-}

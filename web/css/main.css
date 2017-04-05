@@ -492,7 +492,9 @@ body{
 .cards-block .card-block:nth-child(4n){
     margin-right: 0px;
 }
-
+.n4{
+    margin-right: 0px;
+}
 .card-block:last-child{
     margin-right: 0px;
 }
@@ -2597,22 +2599,6 @@ body{
 }
 /*страница выбора города end*/
 
-.news-item{
-    margin-right: 20px;
-    float: left;
-    background-color: #ffffff;
-    cursor: pointer;
-    margin-top: 20px;
-    box-shadow: 0px 2px 0px 0px #cdced0;
-    border-radius: 3px;
-}
-
-.news-info{
-    font-size: 20px;
-    color: #444444;
-    margin: 23px 20px 0 20px;
-    height: auto;
-}
 
 
 
