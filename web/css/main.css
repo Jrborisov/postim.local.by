@@ -249,6 +249,11 @@ body{
 }
 .open-search .cancel{
     display: flex;
+    cursor: pointer;
+}
+.open-search .cancel:after{
+    content: url("../img/close-search-autocomplete.png");
+    margin-right: 5px;
 }
 .btn-search{
     float: right;
