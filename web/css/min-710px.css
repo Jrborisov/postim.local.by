@@ -1,6 +1,9 @@
 .btn-search{
     padding: 3px 0px 3px 0px;
 }
+.search{
+    width: calc(100% - 45px);
+}
 .search_block{
     padding-right: 2px;
 }
