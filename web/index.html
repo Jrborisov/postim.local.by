@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/main.css">
-  <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all">
+  <link type="text/css" href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="all">
   <link rel="stylesheet" media="(min-width: 1320px)" href="css/min-1260px.css">
   <link rel="stylesheet" media="(max-width:1319px)" href="css/min-1190px.css">
   <link rel="stylesheet" media="(max-width:949px)" href="css/min-950px.css">
@@ -149,7 +149,7 @@
       <ul class="catalog">
         <li class="catalog-category bg-blue">
           <div class="catalog-title">
-            <div class="catalog-title-name">Интерсные места</div>
+            <div class="catalog-title-name">Интересные места</div>
             <div class="catalog-title-btn btn-down"></div>
           </div>
           <ul class="catalog-list"></ul>
@@ -610,26 +610,20 @@
       });
 
       function closeOpenCategoryItem(){
-          var items = $('.menu-category').find('.menu-category-list');
-          for(i = 0; i < items.length; i++){
-              if($(items[i]).hasClass('menu-category-open')) {
-                  $(items[i]).removeClass('menu-category-open');
-                  $(items[i]).find('.menu-category-items').css('height', '0');
-                  $(items[i]).find('.close-list-btn').attr('class', 'open-list-btn');
-                  break;
-              }
-          }
+          var item = $('.menu-category').find('.menu-category-open');
+          $(item).removeClass('menu-category-open');
+          $(item).find('.menu-category-items').css('height', '0');
+          $(item).find('.close-list-btn').attr('class', 'open-list-btn');
       }
   })
 </script>
 <!--скрипт для меню end-->
 
 <!-- скрипты для кроссбраузерного скрола меню -->
-<script type="text/javascript" src="js/libs/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="js/libs/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.menu-content').jScrollPane({autoReinitialise: true});
+        $('.menu-content').mCustomScrollbar({});
     });
 </script>
 <!-- скрипты для кроссбраузерного скрола меню end -->

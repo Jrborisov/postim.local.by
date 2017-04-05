@@ -97,19 +97,21 @@ body{
 .news-list-title{
     height: 50px;
     display: flex;
-    padding-left: 40px;
-
+    padding-left: 41px;
+    z-index: 2;
     font-size: 18px;
     color: #788399;
     cursor: pointer;
     align-items: center;
 }
 .news-list-title{
-    padding-left: 41px;
+    margin-bottom: 40px;
+    padding-left: 42px;
 }
 .menu-category-open .category-list-title{
     background-color: #f2f4fd;
     color: #4b98df;
+    z-index: 5;
 }
 .category-list-title:hover,
 .news-list-title:hover{
