@@ -29,6 +29,10 @@
 .open-search .search_block{
     width: calc(100% - 20px);
 }
+.open-search .search{
+    display: inherit;
+    width: calc(100% - 77px);
+}
 .autocomplete-result-search ul li{
     width: 50%;
 }

@@ -97,3 +97,7 @@
 .selected-city{
     font-size: 22px;
 }
+.open-search .search{
+    display: inherit;
+    width: calc(100% - 82px);
+}
