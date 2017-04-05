@@ -240,7 +240,7 @@ body{
     margin: 0px;
     width: calc(100% - 36px);
     font-size: 16px;
-    color: #6b778f;
+    color: #444444;
 }
 .search_block .cancel{
     display: none;
@@ -268,6 +268,7 @@ body{
 }
 .search::-webkit-input-placeholder
 {
+    color: #6b778f;
     font-size: 15px;
 }
 .open-search .menu-btn,
