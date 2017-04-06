@@ -1,6 +1,9 @@
 .search_block{
     width: calc(100% - 295px);
 }
+.authorized .search_block{
+    width: calc(100% - 355px);
+}
 
 .select-city{
     display: none;

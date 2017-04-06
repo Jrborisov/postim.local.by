@@ -206,7 +206,52 @@ body{
 .btn_add_place{
     display: none;
 }
-
+.btn-notice{
+    display: flex;
+    float: right;
+    align-content: center;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.btn-notice:after{
+    content: '';
+    height: 30px;
+    width: 26px;
+    background-image: url("../img/icon-btn-notice.png");
+    background-position: 0 0;
+}
+.btn-notice.active:after{
+    background-image: url("../img/icon-btn-notice-active.png");
+}
+.btn-notice:hover:after{
+    background-position: 26px 0;
+}
+.count-notice{
+    background: #d24a45;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+.profile-icon-menu{
+    float: right;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.profile-icon-menu img{
+    height: 40px;
+    width: 40px;
+}
 .sign_in_btn{
     display: flex;
     float: right;
@@ -2607,8 +2652,68 @@ body{
 }
 /*страница выбора города end*/
 
+.right-menu-profile{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    top: 0px;
+    right:-300px;
+    background: #ffffff;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.container-header-right-menu{
+    display: flex;
+    width: 260px;
+    padding-left: 40px;
+    background-color: #3c5994;
+    height: 60px;
+}
+.right-menu-profile .btn-close{
+    display: flex;
+    height: 60px;
+    width: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+.right-menu-profile .btn-close:after{
+    content: url("../img/icon-close-right-menu.png");
+}
+.container-body-right-menu{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.container-body-right-menu a{
+    font-size: 16px;
+    color: #6b778f;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.container-body-right-menu a:hover{
+    color: #4b98df;
+}
+.container-body-right-menu a:last-child{
+    margin-bottom: 0px;
+}
+.container-body-right-menu a span{
+    width: 27px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
 
-
+.user_icon img{
+    height: 27px;
+    width: 27px;
+    border-radius: 13.5px;
+}
 
 
 

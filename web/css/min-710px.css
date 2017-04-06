@@ -7,6 +7,9 @@
 .search_block{
     padding-right: 2px;
 }
+.authorized .search_block{
+    width: calc(100% - 355px);
+}
 .h1-c{
     font-size: 30px;
 }
