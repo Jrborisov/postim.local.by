@@ -259,7 +259,7 @@
 <script src="js/libs/jquery.js"></script>
 <!--скрипт для меню-->
 <script>
-	var mainMenu={isOpen:false}
+	var mainMenu={isOpen:false};
 	$(document).ready(function () {
 		$(document).on('click','.menu-btn,.close-main-menu',function () {
 			if(!mainMenu.isOpen){
@@ -269,7 +269,7 @@
 				mainMenu.isOpen=false;
 				$('.main-menu').animate({left:'-300px',top:'0px'},200);
 			}
-		})
+		});
 
 		$(document).click(function (e) {
 			if ($(e.target).closest(".main-menu,.menu-btn").length) return;
@@ -280,6 +280,5 @@
 	})
 </script>
 <!--скрипт для меню end-->
-
 </body>
 </html>

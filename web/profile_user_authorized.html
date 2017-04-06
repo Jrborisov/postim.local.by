@@ -128,6 +128,57 @@
   </div>
 </div>
 <!--верхнее меню end-->
+<!--уведомления-->
+<div class="notif-menu">
+  <div class="notif-header-menu">
+    <div class="right-arrow"></div>
+    <div class="header-menu-title">Уведомления</div>
+  </div>
+  <div class="notif-content">
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Вы достигли 2-ого уровня
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Вы получили 15 опыта
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен <b>комментарий на ваш отзыв</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--уведомления end-->
 <div class="margin-top60"></div>
 <div class="block-profile-user">
   <div class="block-content">
@@ -323,5 +374,30 @@
     })
 </script>
 <!--скрипт для правого меню end-->
+<!--скрипт для уведомлений-->
+<script>
+    var notifMenu={
+        isOpen:false, width: '-484px', openTime: 200
+    };
+    $(document).ready(function () {
+        $(document).on('click','.btn-notice,.right-arrow',function () {
+            if(!notifMenu.isOpen){
+                notifMenu.isOpen=true;
+                $('.notif-menu').animate({right:'0px', top:'0px'}, notifMenu.openTime);
+            }else {
+                notifMenu.isOpen=false;
+                $('.notif-menu').animate({right:notifMenu.width, top:'0px'}, notifMenu.openTime);
+            }
+        });
+        $(document).click(function (e) {
+            if ($(e.target).closest(".notif-menu,.btn-notice").length) return;
+            notifMenu.isOpen=false;
+            $('.notif-menu').animate({right:notifMenu.width, top:'0px'}, notifMenu.openTime);
+            e.stopPropagation();
+        });
+
+    })
+</script>
+<!--скрипт для уведомлений end-->
 </body>
 </html>

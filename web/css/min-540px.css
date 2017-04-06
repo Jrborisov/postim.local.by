@@ -171,3 +171,12 @@
 .next-photo:hover:after{
     background: url("../img/icon-next-25px.png") 0px 0;
 }
+
+/*меню уведомлений*/
+.notif-menu{
+    right: -348px;
+    width: 348px;
+}
+.user-info{display: none;}
+.hidden-date{display: block;}
+/*меню уведомлений end*/
