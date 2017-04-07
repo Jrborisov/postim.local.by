@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" media="(min-width: 1320px)" href="css/min-1260px.css">
   <link rel="stylesheet" media="(max-width:1319px)" href="css/min-1190px.css">
   <link rel="stylesheet" media="(max-width:949px)" href="css/min-950px.css">
@@ -431,14 +432,12 @@
   <div class="menu-content">
     <div class="average-check">
       <div class="average-check-label">
-        <p class="average-check-text">Средний чек</p>
-        <p class="average-check-text">0 - 500 BYN</p>
+        <p>Средний чек</p>
+        <p class="average-check-text">
+          <span id="min-border"></span> - <span id="max-border"></span> <span class="check-cost">BYN</span>
+        </p>
       </div>
-      <div class="average-check-range">
-          <div class="range-track"></div>
-          <div class="bound bound-left"></div>
-          <div class="bound bound-right"></div>
-      </div>
+      <div id="slider" class="average-check-range"></div>
     </div>
     <div class="btn-filters"><span>Открыто сейчас</span></div>
     <div class="btn-filters icon-plus"><span>Кухня</span></div>
@@ -458,7 +457,7 @@
 				leftMenu.isOpen=false;
 				$('.left-menu').animate({left:'-300px',top:'0px'},200);
 			}
-		})
+		});
 
 		$(document).click(function (e) {
 			if ($(e.target).closest(".left-menu,.icon-filter").length) return;
@@ -468,6 +467,26 @@
 		})
 	})
 </script>
+<!--скрипт для ползунка-->
+<script src="js/libs/jquery-ui.min.js"></script>
+<script>
 
+    $('#slider').slider({
+        values: [0, 500],
+        max: 500,
+        min: 0,
+        step: 1,
+        range: true,
+        create: displaySliderValues,
+        slide: displaySliderValues,
+        change: displaySliderValues
+    });
+
+    function displaySliderValues() {
+        $('#min-border').text($('#slider').slider("values", 0));
+        $('#max-border').text($('#slider').slider("values", 1));
+    }
+</script>
+<!--скрипт для ползунка end-->
 </body>
 </html>
