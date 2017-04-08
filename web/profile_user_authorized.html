@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/main.css">
+  <link type="text/css" href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="all">
   <link rel="stylesheet" media="(min-width: 1320px)" href="css/min-1260px.css">
   <link rel="stylesheet" media="(max-width:1319px)" href="css/min-1190px.css">
   <link rel="stylesheet" media="(max-width:949px)" href="css/min-950px.css">
@@ -175,6 +176,89 @@
       <div class="notif-text">Получен <b>комментарий на ваш отзыв</b>
         <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
       </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="notif-item">
+      <img src="img/default-profile-icon.png" class="user-icon">
+      <div class="user-info">
+        <p class="notif-username">Василий Утконосов</p>
+        <div class="notif-date-time">21 февраля в 10:45</div>
+      </div>
+      <div class="notif-text">Получен новый отзыв о <b>Музей-заповедник "Коломенское"</b>
+        <div class="notif-date-time hidden-date">21 февраля в 10:45</div>
+      </div>
+    </div>
+    <div class="bottom-btn" style="position: static;">
+      <span>Показать больше уведомлений</span>
     </div>
   </div>
 </div>
@@ -399,5 +483,14 @@
     })
 </script>
 <!--скрипт для уведомлений end-->
+
+<!-- скрипты для кроссбраузерного скрола меню -->
+<script type="text/javascript" src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.notif-content').mCustomScrollbar({scrollInertia: 300});
+    });
+</script>
+<!-- скрипты для кроссбраузерного скрола меню end -->
 </body>
 </html>
