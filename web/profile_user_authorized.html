@@ -449,12 +449,12 @@
             }
         })
 
-        /*$(document).click(function (e) {
-            if ($(e.target).closest(".right-menu-profile,.right-menu-profile .btn-close").length) return;
+        $(document).click(function (e) {
+            if ($(e.target).closest(".profile-icon-menu,.right-menu-profile .btn-close").length) return;
             rightMenu.isOpen=false;
-            $('.right-menu-profile').animate({left:'0px',top:'0px'},200);
+            $('.right-menu-profile').animate({right:'-300px',top:'0px'},200);
             e.stopPropagation();
-        })*/
+        })
     })
 </script>
 <!--скрипт для правого меню end-->

@@ -75,6 +75,34 @@
 .btn_add_place:hover:after{
     content: url("../img/add-place-icon26x26-hover.png");
 }
+.count-notice{
+    width: 20px;
+    height: 20px;
+}
+.profile-icon-menu img{
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+}
+.btn-notice:after{
+    width:23px;
+    height: 27px;
+    background-image: url('../img/icon-btn-notice-22p.png');
+    background-position: 0 0;
+}
+.btn-notice:hover:after{
+    background-image: url('../img/icon-btn-notice-22p.png');
+    background-position: 23px 0;
+}
+.btn-notice.active:after{
+    height: 27px;
+    background-image: url("../img/icon-btn-notice-active22p.png");
+    background-position: 0 0;
+}
+.btn-notice.active:hover:after{
+    background-image: url("../img/icon-btn-notice-active22p.png");
+    background-position: 23px 0;
+}
 .block-social{
     width: 100%;
 }
