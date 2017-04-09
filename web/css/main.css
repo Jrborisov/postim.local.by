@@ -85,6 +85,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 2;
 }
 .bottom-btn span{
     border-bottom: 1px dotted white;
@@ -1024,11 +1025,11 @@ body{
     color: #788399;
     font-size: 16px;
     cursor: pointer;
-    border: 2px solid #d3e4ff;
+    border: 1px solid #d3e4ff;
     border-radius: 25px;
 }
 .btn-filters:hover{
-    border: 2px solid #a7c9ff;
+    border: 1px solid #a7c9ff;
     color: #444444;
 }
 .btn-filters span{
