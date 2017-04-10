@@ -38,6 +38,9 @@
 .logo:after{
     content: url("../img/logo-thinner.png");
 }
+.header-popup-authentication .logo:after{
+    content: url("../img/logo.png");
+}
 .btn-search:after{
     content: url("../img/magnifier-icon18x18.png");
 }
@@ -208,3 +211,76 @@
 .user-info{display: none;}
 .hidden-date{display: block;}
 /*меню уведомлений end*/
+.container-blackout-popup-window{
+    background-color: rgba(52,56,67,0.9);
+}
+.container-popup-window{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.block-social-authentication{
+    flex-wrap: wrap;
+}
+.block-social-authentication a{
+    width: 300px;
+}
+.block-social-authentication .social-btn-vk,
+.block-social-authentication .social-btn-fb,
+.block-social-authentication .social-btn-tw,
+.block-social-authentication .social-btn-ok
+{
+    width: calc(100% - 15px);
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+.block-social-authentication .social-btn-vk:before,
+.block-social-authentication .social-btn-fb:before,
+.block-social-authentication .social-btn-tw:before,
+.block-social-authentication .social-btn-ok:before,
+.block-social-authentication .social-btn-google:before{
+    margin-right: 15px;
+    width: 30px;
+}
+.block-social-authentication .social-btn-vk:after{
+    content: 'ВКонтакте';
+    color: #ffffff;
+    font-size: 16px;
+    font-family: PT_Sans bold;
+}
+.block-social-authentication .social-btn-fb:after{
+    content: 'Facebook';
+    color: #ffffff;
+    font-size: 16px;
+    font-family: PT_Sans bold;
+}
+.block-social-authentication .social-btn-ok:after{
+    content: 'Одноклассники';
+    color: #ffffff;
+    font-size: 16px;
+    font-family: PT_Sans bold;
+}
+.block-social-authentication .social-btn-tw:after{
+    content: 'Twitter';
+    color: #ffffff;
+    font-size: 16px;
+    font-family: PT_Sans bold;
+}
+.block-social-authentication .social-btn-google:after{
+    content: 'Google';
+    color: #ffffff;
+    font-size: 16px;
+    font-family: PT_Sans bold;
+}
+.block-social-authentication .social-btn-google{
+    justify-content: flex-start;
+    width: calc(100% - 15px);
+    padding-left: 15px;
+}
