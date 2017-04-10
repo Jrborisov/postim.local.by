@@ -236,18 +236,20 @@
 .block-social-authentication .social-btn-tw,
 .block-social-authentication .social-btn-ok
 {
-    width: calc(100% - 15px);
+    width: calc(100% - 20px);
     margin-bottom: 20px;
     justify-content: flex-start;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 .block-social-authentication .social-btn-vk:before,
 .block-social-authentication .social-btn-fb:before,
 .block-social-authentication .social-btn-tw:before,
 .block-social-authentication .social-btn-ok:before,
 .block-social-authentication .social-btn-google:before{
-    margin-right: 15px;
+    margin-right: 20px;
     width: 30px;
+    display: flex;
+    justify-content: center;
 }
 .block-social-authentication .social-btn-vk:after{
     content: 'ВКонтакте';
@@ -281,6 +283,6 @@
 }
 .block-social-authentication .social-btn-google{
     justify-content: flex-start;
-    width: calc(100% - 15px);
-    padding-left: 15px;
+    width: calc(100% - 20px);
+    padding-left: 20px;
 }

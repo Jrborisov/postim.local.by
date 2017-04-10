@@ -306,7 +306,7 @@
       </div>
       <div class="text-label">Или зарегистрируйте акаунт на сайте:</div>
       <div class="field-input">
-        <input placeholder="Логин или электронная почта">
+        <input placeholder="Электронная почта">
       </div>
       <div class="field-input">
         <input placeholder="Пароль">
@@ -342,7 +342,7 @@
       </div>
       <div class="field-line-btns">
         <a class="btn-link sign-in-btn">Авторизация</a>
-        <a class="btn-link sign-up-btn">Регистрация?</a>
+        <a class="btn-link sign-up-btn">Регистрация</a>
       </div>
     </div>
   </div>
@@ -383,7 +383,7 @@
           signForm.isOpen=false;
           $('.form-sign-in').parents('.container-blackout-popup-window').hide();
       }
-  })
+  });
     $(document).click(function (e) {
         if(signForm.isOpen){
             if ($(e.target).closest(".form-sign-in,.sign-in-btn,.sign_in_btn").length) return;
@@ -391,7 +391,7 @@
             $('.form-sign-in').parents('.container-blackout-popup-window').hide();
             e.stopPropagation();
         }
-    })
+    });
 
     var signUpForm={isOpen:false};
     $(document).on('click','.sign-in-btn,.sign-up-btn,.close-sign-up',function () {
@@ -402,7 +402,7 @@
             signUpForm.isOpen=false;
             $('.form-sign-up').parents('.container-blackout-popup-window').hide();
         }
-    })
+    });
     $(document).click(function (e) {
         if(signUpForm.isOpen){
             if ($(e.target).closest(".form-sign-up,.sign-up-btn").length) return;
@@ -410,7 +410,7 @@
             $('.form-sign-up').parents('.container-blackout-popup-window').hide();
             e.stopPropagation();
         }
-    })
+    });
 
     var signRecoveryForm={isOpen:false};
     $(document).on('click','.recovery-btn,.sign-in-btn,.sign-up-btn,.close-recovery-btn',function () {
@@ -421,7 +421,7 @@
             signRecoveryForm.isOpen=false;
             $('.form-recovery').parents('.container-blackout-popup-window').hide();
         }
-    })
+    });
     $(document).click(function (e) {
         if(signRecoveryForm.isOpen){
             if ($(e.target).closest(".recovery-btn,.form-recovery").length){

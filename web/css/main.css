@@ -2847,8 +2847,11 @@ body{
     background-color: #48729c;
     height: 45px;
     width: 75px;
-    border-radius: 1px;
+    border-radius: 3px;
     box-shadow: 0 1px 0 #314662;
+}
+.block-social-authentication .social-btn-vk:hover{
+    background-color: #3c6083;
 }
 .block-social-authentication .social-btn-vk:before{
     content: url('../img/big-icon-vk.png');
@@ -2860,8 +2863,11 @@ body{
     background-color: rgb(47,76,135);
     height: 45px;
     width: 75px;
-    border-radius: 1px;
+    border-radius: 3px;
     box-shadow: 0 1px 0 #1d1e3c;
+}
+.block-social-authentication .social-btn-fb:hover{
+    background-color: #274071;
 }
 .block-social-authentication .social-btn-fb:before {
     content: url('../img/big-icon-fb.png');
@@ -2874,8 +2880,11 @@ body{
     background-color: rgb(0,172,237);
     height: 45px;
     width: 75px;
-    border-radius: 1px;
+    border-radius: 3px;
     box-shadow: 0 1px 0 #005376;
+}
+.block-social-authentication .social-btn-tw:hover{
+    background-color: #009bd6;
 }
 .block-social-authentication .social-btn-tw:before {
     content: url('../img/big-icon-tw.png');
@@ -2887,8 +2896,11 @@ body{
     background-color: rgb(235,114,46);
     height: 45px;
     width: 75px;
-    border-radius: 1px;
+    border-radius: 3px;
     box-shadow: 0 1px 0 #934e23;
+}
+.block-social-authentication .social-btn-ok:hover{
+    background-color: #d16f32;
 }
 .block-social-authentication .social-btn-ok:before {
     content: url('../img/big-icon-ok.png');
@@ -2900,11 +2912,14 @@ body{
     background-color: rgb(192,32,32);
     height: 45px;
     width: 75px;
-    border-radius: 1px;
+    border-radius: 3px;
     box-shadow: 0 1px 0 #891a1a;
 }
 .block-social-authentication .social-btn-google:before {
     content: url('../img/big-icon-google.png');
+}
+.block-social-authentication .social-btn-google:hover{
+    background-color: #a72121;
 }
 .block-social-authentication .social-btn-google:after,
 .block-social-authentication .social-btn-tw:after,
@@ -2939,6 +2954,11 @@ body{
     border: 1px solid #d3e4ff;
     padding: 10px;
     margin-top: 10px;
+}
+.field-input input::-webkit-input-placeholder{
+    font-family: PT_Sans;
+    color: #6b778f;
+    font-size: 15px;
 }
 .btn-red{
     background-color: #cf4d43;
