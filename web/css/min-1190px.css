@@ -56,7 +56,8 @@
 .block-info-for-owner{
     width: calc(100% - 345px);
 }
-.block-description-card{
+.block-description-card,
+.container-settings{
     width: calc(100% - 355px);
 }
 .card-block,
