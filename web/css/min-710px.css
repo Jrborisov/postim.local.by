@@ -115,3 +115,24 @@
 .card-block{
     margin-right: 0px;
 }
+
+.photo-right-arrow div, .photo-left-arrow div{
+    width: 12px;
+    height: 24px;
+}
+.photo-left-arrow, .photo-right-arrow{width: 40px;}
+.photo-popup-content{
+    width: calc(100% - 80px);
+}
+.photo-right-arrow div{
+    background: url("../img/icon-next-25px.png") 12px 0px;
+}
+.photo-left-arrow div{
+    background: url("../img/icon-pre-25px.png");
+}
+.photo-right-arrow div:hover{
+    background: url("../img/icon-next-25px.png")
+}
+.photo-left-arrow div:hover{
+    background: url("../img/icon-pre-25px.png") 12px 0px;
+}

@@ -3150,18 +3150,84 @@ body{
     border-top: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.container-blackout-photo-popup, .photo-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.container-blackout-photo-popup{
+    background-color: rgba(52,56,67,0.9);
+    z-index: 100;
+}
+.photo-popup{
+    z-index: 101;
+    justify-content: space-between;
+}
+.photo-left-arrow, .photo-right-arrow{width: 75px;}
+.photo-header{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 19px;
+}
+.photo-popup-content{
+    padding-top: 26px;
+    width: calc(100% - 150px);
+}
+.photo-wrap{
+    margin-top: 20px;
+    height: calc(100% - 174px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-right-arrow, .photo-left-arrow{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-right-arrow div, .photo-left-arrow div{
+    width: 25px;
+    height: 46px;
+}
+.photo-right-arrow div{
+    background: url("../img/icon-next.png") 25px 0px;
+}
+.photo-left-arrow div{
+    background: url("../img/icon-pre.png");
+}
+.photo-right-arrow div:hover{
+    cursor: pointer;
+    background: url("../img/icon-next.png")
+}
+.photo-left-arrow div:hover{
+    cursor: pointer;
+    background: url("../img/icon-pre.png") 25px 0px;
+}
+.close-photo-popup{
+    position: fixed;
+    right: 16px;
+    top: 16px;
+    width: 27px;
+    height: 27px;
+    background: url("../img/close-big-icon-grey.png");
+}
+.close-photo-popup:hover{
+    cursor: pointer;
+    background: url("../img/close-big-icon.png");
+}
+.photo-source a{
+    color: #A7C9FF;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-left: 3px;
+}
+.photo-source a:hover{text-decoration: none;}
+.photo-source:before{
+    content: url("../img/source.png")
+}
 
 
 

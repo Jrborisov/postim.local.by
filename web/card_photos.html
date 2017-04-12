@@ -250,13 +250,33 @@
     <div class="text-footer">
       ИП&nbsp;Борисов&nbsp;Владислав&nbsp;Александрович, УНП&nbsp;591251086. Режим&nbsp;работы&nbsp;–&nbsp;9:00&nbsp;до&nbsp;18:00. Тел:&nbsp;(029)&nbsp;718&nbsp;16&nbsp;66. Эл.&nbsp;почта:&nbsp;<span class="email-address">info@postim.by.</span> ©&nbsp;2016–2017&nbsp;Postim.by
     </div>
+
+
   </div>
+
+</div>
+<div class="container-blackout-photo-popup"></div>
+<div class="photo-popup">
+  <div class="close-photo-popup"></div>
+  <div class="photo-left-arrow"><div></div></div>
+  <div class="photo-popup-content">
+    <div class="photo-info">
+      <div class="photo-header">Ресторан Da Pino ("Да Пино") на Бронной</div>
+      <div class="photo-source">
+        <a href="#">Источник</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <img class="photo-popup-item">
+    </div>
+  </div>
+  <div class="photo-right-arrow"><div></div></div>
 </div>
 
 <script src="js/libs/jquery.js"></script>
 <!--скрипт для меню-->
 <script>
-	var mainMenu={isOpen:false}
+	var mainMenu={isOpen:false};
 	$(document).ready(function () {
 		$(document).on('click','.menu-btn,.close-main-menu',function () {
 			if(!mainMenu.isOpen){
@@ -266,7 +286,7 @@
 				mainMenu.isOpen=false;
 				$('.main-menu').animate({left:'-300px',top:'0px'},200);
 			}
-		})
+		});
 
 		$(document).click(function (e) {
 			if ($(e.target).closest(".main-menu,.menu-btn").length) return;
@@ -274,9 +294,66 @@
 			$('.main-menu').animate({left:'-300px',top:'0px'},200);
 			e.stopPropagation();
 		})
-	})
+	});
+
 </script>
 <!--скрипт для меню end-->
+<!--скрипт для всплывающего фото-->
+<script>
 
+    var imgSize={height:null, width:null};
+    $(document).on('click','.container-photo',function () {
+        $('.container-blackout-photo-popup').css('display', 'block');
+        $('.photo-popup').css('display', 'flex');
+        $('body').css('overflow', 'hidden');
+
+        var imgUrl = $(this).css('background-image');
+        imgUrl = imgUrl.replace('url(','').replace(')','').replace(/\"/gi, "");
+        $('.photo-popup-item').attr('src', imgUrl);
+        imgSize.height = $(".photo-wrap img").height();
+        imgSize.width = $(".photo-wrap img").width();
+        resizePopupPhoto(imgSize.height, imgSize.width);
+    });
+
+    function resizePopupPhoto(height, width) {
+        if($('.photo-popup').css('display') != 'none'){
+            var wrapHeight = $(".photo-wrap").height();
+            var wrapWidth = $(".photo-wrap").width();
+            console.log("w="+wrapWidth+" h="+wrapHeight);
+            if(wrapHeight <= wrapWidth){
+                if(height >= wrapHeight) $(".photo-wrap img").css({
+                    width: 'auto',
+                    height: wrapHeight
+                }); else if(width >= wrapWidth) $(".photo-wrap img").css({
+                    width: wrapWidth,
+                    height: 'auto'
+                });
+            }else{
+                if(width >= wrapWidth) $(".photo-wrap img").css({
+                    width: wrapWidth,
+                    height: 'auto'
+                }); else if(height >= wrapHeight) $(".photo-wrap img").css({
+                    width: 'auto',
+                    height: wrapHeight
+                });
+            }
+            if($(".photo-wrap img").width() > wrapWidth) $(".photo-wrap img").css({
+                width: wrapWidth,
+                height: 'auto'
+            });
+        }
+    }
+    $(window).bind('resize', imgSize, function (e) {
+        resizePopupPhoto(e.data.height, e.data.width);
+    });
+
+    $(document).on('click','.close-photo-popup',function () {
+        $('.container-blackout-photo-popup').css('display', 'none');
+        $('.photo-popup').css('display', 'none');
+        $('body').css('overflow', 'auto');
+    });
+
+</script>
+<!--скрипт для всплывающего фото end-->
 </body>
 </html>
