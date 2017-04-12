@@ -3149,6 +3149,30 @@ body{
     margin-left: -20px;
     border-top: 0px;
 }
+.selected-field{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-value{
+    cursor: pointer;
+    font-size: 16px;
+    color:#444444;
+}
+.select-value .placeholder-select{
+    font-size: 15px;
+    color:#6b778f;
+}
+.open-select-field{
+    cursor: pointer;
+}
+.open-select-field:before{
+    content: url("../img/direction-d.png");
+}
+.open-select-field:hover:before{
+    content: url("../img/direction-d-hover.png");
+}
 
 .container-blackout-photo-popup, .photo-popup{
     position: fixed;
@@ -3228,6 +3252,54 @@ body{
 .photo-source:before{
     content: url("../img/source.png")
 }
+.close-select-field{
+    cursor: pointer;
+}
+.close-select-field:before{
+    content: url("../img/direction-t.png");
+}
+.close-select-field:hover:before{
+    content: url("../img/directiont-hover.png");
+}
+
+.container-scroll{
+    display: block;
+    height: 0px;
+    max-height: 303px;
+    margin-top: 20px;
+}
+.container-scroll.open-select{
+    margin-bottom: 20px;
+    height: 303px;
+}
+.container-option-select{
+    display: block;
+}
+.option-select-field{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color:#6b778f;
+    cursor: pointer;
+}
+.option-select-field:hover{
+    color: #444444;
+}
+.option-select-field:first-child{
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/main.css">
+  <link type="text/css" href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="all">
   <link rel="stylesheet" media="(min-width: 1320px)" href="css/min-1260px.css">
   <link rel="stylesheet" media="(max-width:1319px)" href="css/min-1190px.css">
   <link rel="stylesheet" media="(max-width:949px)" href="css/min-950px.css">
@@ -66,12 +67,12 @@
           <li class="menu-category-item"><a>Коттеджи и усадьбы</a></li>
         </ul>
       </li>
-      <li class="menu-category-list menu-category-open">
+      <li class="menu-category-list">
         <div class="category-list-title">
           <a>Развлечения</a>
-          <span class="close-list-btn"></span>
+          <span class="open-list-btn"></span>
         </div>
-        <ul class="menu-category-items" style="height: 445px">
+        <ul class="menu-category-items">
           <li class="menu-category-item"><a>Все места</a></li>
           <li class="menu-category-item"><a>Отели</a></li>
           <li class="menu-category-item"><a>Коттеджи и усадьбы</a></li>
@@ -137,20 +138,39 @@
     </div>
     <div class="block-field-setting">
       <label class="label-field-setting">Город</label>
-      <select class="select-field-setting">
-        <option selected>Минск</option>
-        <option>Гродно</option>
-        <option>Брест</option>
-        <option>Витебск</option>
-        <option>Могилев</option>
-      </select>
+      <div class="selected-field">
+        <div id="select-city-value" data-value="" class="select-value"><span class="placeholder-select">Выберите город</span></div>
+          <div data-open-id="select-city" class="open-select-field"></div>
+      </div>
+      <div id="select-city" class="container-scroll">
+        <div class="container-option-select">
+          <div data-value="Минск" class="option-select-field">Минск</div>
+          <div data-value="Брест" class="option-select-field">Брест</div>
+          <div data-value="Витебск" class="option-select-field">Витебск</div>
+          <div data-value="Гродно" class="option-select-field">Гродно</div>
+          <div data-value="Гомель" class="option-select-field">Гомель</div>
+          <div data-value="Березено" class="option-select-field">Березено</div>
+          <div data-value="Борисов" class="option-select-field">Борисов</div>
+          <div data-value="Волковыск" class="option-select-field">Волковыск</div>
+          <div data-value="Жодино" class="option-select-field">Жодино</div>
+          <div data-value="Крупки" class="option-select-field">Крупки</div>
+          <div data-value="Могилев" class="option-select-field">Могилев</div>
+          <div data-value="Барановичи" class="option-select-field">Барановичи</div>
+        </div>
+      </div>
     </div>
     <div class="block-field-setting">
       <label class="label-field-setting">Пол</label>
-      <select class="select-field-setting">
-        <option selected>Мужской</option>
-        <option>Женский</option>
-      </select>
+      <div class="selected-field">
+        <div id="select-sex-value" data-value="" class="select-value"><span class="placeholder-select">Выберите пол</span></div>
+        <div data-open-id="select-sex" class="open-select-field"></div>
+      </div>
+      <div id="select-sex" class="container-scroll" style="max-height:55px">
+        <div class="container-option-select">
+          <div data-value="1" class="option-select-field">Мужской</div>
+          <div data-value="2" class="option-select-field">Женский</div>
+        </div>
+      </div>
     </div>
     <div class="block-field-setting">
       <label class="label-field-setting">Подключить аккаунты</label>
@@ -324,6 +344,26 @@
 			$('.main-menu').animate({left:'-300px',top:'0px'},200);
 			e.stopPropagation();
 		})
+
+        $(document).on('click','.category-list-title',function () {
+            if($(this).find('span').hasClass('open-list-btn')){
+                closeOpenCategoryItem();
+                $(this).find('span').attr('class', 'close-list-btn');
+                $(this).parent().addClass('menu-category-open');
+                $(this).next(".menu-category-items").css('height', 'auto');
+            } else {
+                $(this).find('span').attr('class', 'open-list-btn');
+                $(this).parent().removeClass('menu-category-open');
+                $(this).next(".menu-category-items").css('height', '0');
+            }
+        });
+
+        function closeOpenCategoryItem(){
+            var item = $('.menu-category').find('.menu-category-open');
+            $(item).removeClass('menu-category-open');
+            $(item).find('.menu-category-items').css('height', '0');
+            $(item).find('.close-list-btn').attr('class', 'open-list-btn');
+        }
 	})
 </script>
 <!--скрипт для меню end-->
@@ -394,5 +434,53 @@
 
 </script>
 <!--скрипт для входа end-->
+
+<!--скрипт для работы селект блока-->
+<script type="text/javascript" src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.container-scroll').mCustomScrollbar({scrollInertia: 200});
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(document).on('click','.select-value',function () {
+            $(this).next().click();
+        });
+        $(document).on('click', '.open-select-field', function () {
+            var id_block = $(this).data('open-id');
+            $(this).removeClass('open-select-field').addClass('close-select-field');
+            $('#' + id_block).addClass('open-select');
+        });
+
+        $(document).on('click', '.close-select-field', function () {
+            var id_block = $(this).data('open-id');
+            $(this).removeClass('close-select-field').addClass('open-select-field');
+            $('#' + id_block).removeClass('open-select');
+        });
+
+        $(document).on('click','.option-select-field',function () {
+            var prntId = $(this).parents('.container-scroll').attr('id');
+
+            var selectValue = $(this).data('value');
+            var selectLabel = $(this).html();
+
+            var preSelectValue = $('#' + prntId + '-value').data('value');
+            var preSelectLabel = $('#' + prntId + '-value').html();
+
+            $('#' + prntId + '-value').data('value', selectValue);
+            $('#' + prntId + '-value').html(selectLabel);
+
+            $(this).data('value', preSelectValue);
+            $(this).html(preSelectLabel);
+            if(preSelectValue==''){
+                $($(this).parent()).prepend($(this));
+            }
+            $('#' + prntId + '-value').click();
+
+        })
+    });
+</script>
+<!--скрипт для работы селект блока end-->
 </body>
 </html>
