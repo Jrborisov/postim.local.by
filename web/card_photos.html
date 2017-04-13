@@ -262,12 +262,12 @@
   <div class="photo-popup-content">
     <div class="photo-info">
       <div class="photo-header">Ресторан Da Pino ("Да Пино") на Бронной</div>
-      <div class="photo-source">
-        <a href="#">Источник</a>
-      </div>
     </div>
     <div class="photo-wrap">
       <img class="photo-popup-item">
+    </div>
+    <div class="photo-source">
+      <a href="#">Источник</a>
     </div>
   </div>
   <div class="photo-right-arrow"><div></div></div>
@@ -319,7 +319,7 @@
         if($('.photo-popup').css('display') != 'none'){
             var wrapHeight = $(".photo-wrap").height();
             var wrapWidth = $(".photo-wrap").width();
-            console.log("w="+wrapWidth+" h="+wrapHeight);
+
             if(wrapHeight <= wrapWidth){
                 if(height >= wrapHeight) $(".photo-wrap img").css({
                     width: 'auto',

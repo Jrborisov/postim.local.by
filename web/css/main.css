@@ -3190,19 +3190,19 @@ body{
     z-index: 101;
     justify-content: space-between;
 }
-.photo-left-arrow, .photo-right-arrow{width: 75px;}
+.photo-left-arrow, .photo-right-arrow{width: 65px;}
 .photo-header{
     color: white;
     font-size: 18px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
+    margin-left: -31px;
 }
 .photo-popup-content{
-    padding-top: 26px;
     width: calc(100% - 150px);
 }
+.photo-info{padding-top: 20px;}
 .photo-wrap{
-    margin-top: 20px;
-    height: calc(100% - 174px);
+    height: calc(100% - 120px);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -3232,25 +3232,29 @@ body{
 }
 .close-photo-popup{
     position: fixed;
-    right: 16px;
+    right: 20px;
     top: 16px;
     width: 27px;
     height: 27px;
     background: url("../img/close-big-icon-grey.png");
+    margin-left: 20px;
 }
 .close-photo-popup:hover{
     cursor: pointer;
     background: url("../img/close-big-icon.png");
 }
+.photo-source{
+    margin: 27px 0px 0px -30px;
+}
 .photo-source a{
     color: #A7C9FF;
     text-decoration: underline;
     font-size: 13px;
-    margin-left: 3px;
+
 }
 .photo-source a:hover{text-decoration: none;}
 .photo-source:before{
-    content: url("../img/source.png")
+    content: url("../img/source.png");
 }
 .close-select-field{
     cursor: pointer;
