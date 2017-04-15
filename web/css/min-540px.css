@@ -202,7 +202,8 @@
 .next-photo:hover:after{
     background: url("../img/icon-next-25px.png") 0px 0;
 }
-
+.next-popup-photo{margin-left: -32.5px;}
+.pre-popup-photo{margin-right: -32.5px;}
 /*меню уведомлений*/
 .notif-menu{
     right: -348px;

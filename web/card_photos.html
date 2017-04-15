@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Главная страница</title>
   <link rel="stylesheet" href="css/main.css">
+  <link type="text/css" href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="all">
   <link rel="stylesheet" media="(min-width: 1320px)" href="css/min-1260px.css">
   <link rel="stylesheet" media="(max-width:1319px)" href="css/min-1190px.css">
   <link rel="stylesheet" media="(max-width:949px)" href="css/min-950px.css">
@@ -250,8 +251,6 @@
     <div class="text-footer">
       ИП&nbsp;Борисов&nbsp;Владислав&nbsp;Александрович, УНП&nbsp;591251086. Режим&nbsp;работы&nbsp;–&nbsp;9:00&nbsp;до&nbsp;18:00. Тел:&nbsp;(029)&nbsp;718&nbsp;16&nbsp;66. Эл.&nbsp;почта:&nbsp;<span class="email-address">info@postim.by.</span> ©&nbsp;2016–2017&nbsp;Postim.by
     </div>
-
-
   </div>
 
 </div>
@@ -261,10 +260,14 @@
   <div class="photo-left-arrow"><div></div></div>
   <div class="photo-popup-content">
     <div class="photo-info">
-      <div class="photo-header">Ресторан Da Pino ("Да Пино") на Бронной</div>
+      <div class="photo-header" >
+        Ресторан Da Pino ("Да Пино") на Бронной. Ресторан Da Pino ("Да Пино") на Бронной.
+      </div>
     </div>
     <div class="photo-wrap">
+      <div class="pre-photo pre-popup-photo"></div>
       <img class="photo-popup-item">
+      <div class="next-photo next-popup-photo"></div>
     </div>
     <div class="photo-source">
       <a href="#">Источник</a>
@@ -298,9 +301,18 @@
 
 </script>
 <!--скрипт для меню end-->
+<!-- скрипты для кроссбраузерного скрола меню -->
+<script type="text/javascript" src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu-content').mCustomScrollbar({scrollInertia: 50});
+       $('.photo-header').mCustomScrollbar({axis: "x",scrollInertia: 50, scrollbarPosition: "outside"});
+    });
+</script>
+<!-- скрипты для кроссбраузерного скрола меню end -->
+
 <!--скрипт для всплывающего фото-->
 <script>
-
     var imgSize={height:null, width:null};
     $(document).on('click','.container-photo',function () {
         $('.container-blackout-photo-popup').css('display', 'block');
@@ -313,6 +325,7 @@
         imgSize.height = $(".photo-wrap img").height();
         imgSize.width = $(".photo-wrap img").width();
         resizePopupPhoto(imgSize.height, imgSize.width);
+        $('#mCSB_2_container').css('left', 0);
     });
 
     function resizePopupPhoto(height, width) {
@@ -341,6 +354,7 @@
                 width: wrapWidth,
                 height: 'auto'
             });
+            $('.pre-popup-photo, .next-popup-photo').css('height', $(".photo-wrap img").height());
         }
     }
     $(window).bind('resize', imgSize, function (e) {

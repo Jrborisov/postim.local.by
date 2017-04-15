@@ -270,7 +270,23 @@
       </div>
     </div>
   </div>
-
+</div>
+<div class="container-blackout-popup-window" style="display: none">
+  <div class="container-popup-window form-complaint">
+    <div class="header-popup-authentication">
+      <div class="logo"></div>
+      <div class="close-big-icon close-complaint-btn"></div>
+    </div>
+    <div class="body-popup-authentication">
+      <div class="text-label complain-text">Что-то не так?</div>
+      <div class="field-input">
+        <input placeholder="Опишите суть жалобы">
+      </div>
+      <div class="field-btn">
+        <div class="btn-red complain-btn">Пожаловаться</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div style="margin-bottom:30px;"></div>
@@ -313,26 +329,49 @@
 <!--скрипт для меню-->
 <script>
 	var mainMenu={isOpen:false}
-	$(document).ready(function () {
-		$(document).on('click','.menu-btn,.close-main-menu',function () {
-			if(!mainMenu.isOpen){
-				mainMenu.isOpen=true;
-				$('.main-menu').animate({left:'0px',top:'0px'},200);
-			}else {
-				mainMenu.isOpen=false;
-				$('.main-menu').animate({left:'-300px',top:'0px'},200);
-			}
-		})
+    $(document).ready(function () {
+        $(document).on('click','.menu-btn,.close-main-menu',function () {
+            if(!mainMenu.isOpen){
+                mainMenu.isOpen=true;
+                $('.main-menu').animate({left:'0px',top:'0px'},200);
+            }else {
+                mainMenu.isOpen=false;
+                $('.main-menu').animate({left:'-300px',top:'0px'},200);
+            }
+        })
 
-		$(document).click(function (e) {
-			if ($(e.target).closest(".main-menu,.menu-btn").length) return;
-			mainMenu.isOpen=false;
-			$('.main-menu').animate({left:'-300px',top:'0px'},200);
-			e.stopPropagation();
-		})
-	})
+        $(document).click(function (e) {
+            if ($(e.target).closest(".main-menu,.menu-btn").length) return;
+            mainMenu.isOpen=false;
+            $('.main-menu').animate({left:'-300px',top:'0px'},200);
+            e.stopPropagation();
+        })
+    })
 </script>
 <!--скрипт для меню end-->
-
+<!--скрипт для кнопки жалобы-->
+<script>
+    var complaintForm={isOpen:false};
+    $(document).on('click','.review-footer-btn, .btn-comment',function () {
+        if(!complaintForm.isOpen){
+            complaintForm.isOpen=true;
+            $('.form-complaint').parents('.container-blackout-popup-window').show();
+        }else {
+            complaintForm.isOpen=false;
+            $('.form-complaint').parents('.container-blackout-popup-window').hide();
+        }
+    });
+    $(document).click(function (e) {
+        if(complaintForm.isOpen){
+            if ($(e.target).hasClass("container-blackout-popup-window") ||
+                $(e.target).hasClass("close-complaint-btn")) {
+                complaintForm.isOpen = false;
+                $('.form-complaint').parents('.container-blackout-popup-window').hide();
+                e.stopPropagation();
+            }
+        }
+    });
+</script>
+<!--скрипт для кнопки жалобы-->
 </body>
 </html>

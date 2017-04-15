@@ -3194,18 +3194,23 @@ body{
 .photo-header{
     color: white;
     font-size: 18px;
-    padding-bottom: 20px;
-    margin-left: -31px;
+    margin-left: -55px;
+    height: 20px;
+    white-space: nowrap;
 }
 .photo-popup-content{
     width: calc(100% - 150px);
 }
-.photo-info{padding-top: 20px;}
+.photo-info{
+    padding-top: 20px;
+}
 .photo-wrap{
     height: calc(100% - 120px);
     display:flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
+    z-index: 100;
 }
 .photo-right-arrow, .photo-left-arrow{
     display:flex;
@@ -3237,14 +3242,13 @@ body{
     width: 27px;
     height: 27px;
     background: url("../img/close-big-icon-grey.png");
-    margin-left: 20px;
 }
 .close-photo-popup:hover{
     cursor: pointer;
     background: url("../img/close-big-icon.png");
 }
 .photo-source{
-    margin: 27px 0px 0px -30px;
+    margin: 27px 0px 0px -55px;
 }
 .photo-source a{
     color: #A7C9FF;
@@ -3292,8 +3296,11 @@ body{
 .option-select-field:first-child{
     margin-top: 0px;
 }
-
-
+.complain-text{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.pre-popup-photo, .next-popup-photo{display: none;}
 
 
 

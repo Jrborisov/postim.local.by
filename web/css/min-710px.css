@@ -116,27 +116,28 @@
     margin-right: 0px;
 }
 
-.photo-right-arrow div, .photo-left-arrow div{
-    width: 12px;
-    height: 24px;
-}
-.photo-left-arrow, .photo-right-arrow{width: 20px;}
 .photo-popup-content{
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
 }
-.photo-right-arrow div{
-    background: url("../img/icon-next-25px.png") 12px 0px;
-}
-.photo-left-arrow div{
-    background: url("../img/icon-pre-25px.png");
-}
-.photo-right-arrow div:hover{
-    background: url("../img/icon-next-25px.png")
-}
+.photo-left-arrow div,
+.photo-right-arrow div,
+.photo-right-arrow div:hover,
 .photo-left-arrow div:hover{
-    background: url("../img/icon-pre-25px.png") 12px 0px;
+    background: none;
+    cursor: auto;
 }
+.pre-popup-photo, .next-popup-photo{
+    display: flex;
+    z-index: 5;
+}
+.pre-popup-photo{margin-right: -75px;}
+.next-popup-photo{margin-left: -75px;}
+.photo-left-arrow, .photo-right-arrow{width: 10px;}
 .photo-header, .photo-source{
     margin-left: 0;
 }
-.photo-header{padding-right: 47px;}
+.photo-header{
+    padding-right: 47px;
+    width: calc(100% - 67px);
+}
+.close-photo-popup{right: 10px;}
