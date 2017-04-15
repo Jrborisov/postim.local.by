@@ -137,7 +137,6 @@
     margin-left: 0;
 }
 .photo-header{
-    padding-right: 47px;
-    width: calc(100% - 67px);
+    width: calc(100% -  48px);
 }
 .close-photo-popup{right: 10px;}

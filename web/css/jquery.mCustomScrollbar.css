@@ -155,9 +155,9 @@ x-axis
 	.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden{ margin-bottom: 0; } /* non-visible scrollbar */
 
 	.mCSB_scrollTools.mCSB_scrollTools_horizontal{
-		width: calc(100% - 8px);
+		width: 100%;
 		height: 16px;
-		top: 20px;
+		top: 30px;
 		right: 0;
 		bottom: 0;
 		left: 0;
