@@ -3197,6 +3197,7 @@ body{
     margin-left: -55px;
     height: 20px;
     white-space: nowrap;
+    width: calc(100% + 62px);
 }
 .photo-popup-content{
     width: calc(100% - 150px);
