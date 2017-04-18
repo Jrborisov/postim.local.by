@@ -462,6 +462,39 @@
   </div>
 </div>
 
+<div class="container-blackout-popup-window" style="display: none">
+  <div class="container-popup-window form-business-account">
+    <div class="header-popup-authentication">
+      <div class="logo"></div>
+      <div class="close-big-icon close-business-account-btn"></div>
+    </div>
+    <div class="body-popup-authentication">
+      <div class="visible-form-business-account">
+        <div class="text-label complain-text">Создание бизнес-аккаунта</div>
+        <div class="field-input" style="margin-top: 18px;">
+          <input placeholder="Имя и фамилия">
+        </div>
+        <div class="field-input">
+          <input placeholder="Должность в компании">
+        </div>
+        <div class="field-input">
+          <input placeholder="Контактный телефон">
+        </div>
+        <div class="field-input">
+          <input placeholder="Электронная почта">
+        </div>
+        <div class="field-btn">
+          <div class="btn-red create-business-account-btn">Создать аккаунт</div>
+        </div>
+      </div>
+      <div class="hidden-business-account-message">
+        <div class="text-label complain-text">Ваша заявка успешно отправлена</div>
+        <div class="text-label" style="margin-top: 15px;">Спасибо за вашу заявку. Она будет рассмотрена
+          в ближайшее время, после чего наш менеджер свяжется с вами</div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="js/libs/jquery.js"></script>
 <!--скрипт для меню-->
 <script>
@@ -486,6 +519,37 @@
 	})
 </script>
 <!--скрипт для меню end-->
-
+<!--скрипт для бизнес-аккаунта-->
+<script>
+    var businessAccountForm={isOpen:false};
+    $(document).on('click','.block-info-for-owner',function () {
+        $('.hidden-business-account-message').hide();
+        $('.visible-form-business-account').show();
+        if(!businessAccountForm.isOpen){
+            businessAccountForm.isOpen=true;
+            $('.form-business-account').parents('.container-blackout-popup-window').show();
+        }else {
+            businessAccountForm.isOpen=false;
+            $('.form-business-account').parents('.container-blackout-popup-window').hide();
+        }
+    });
+    $(document).click(function (e) {
+        if(businessAccountForm.isOpen){
+            if ($(e.target).hasClass("container-blackout-popup-window") ||
+                $(e.target).hasClass("close-business-account-btn")) {
+                businessAccountForm.isOpen=false;
+                $('.form-business-account').parents('.container-blackout-popup-window').hide();
+                e.stopPropagation();
+            }
+        }
+    });
+    $(document).on('click','.create-business-account-btn',function () {
+        if (true) { //проверка валидности формы
+            $('.visible-form-business-account').hide();
+            $('.hidden-business-account-message').show();
+        }
+    });
+<!--скрипт для бизнес-аккаунта end-->
+</script>
 </body>
 </html>

@@ -1993,7 +1993,8 @@ body{
 }
 .content-between{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .comment-time{
     margin-top: 8px;
@@ -2005,6 +2006,8 @@ body{
     font-size: 12px;
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 0;
 }
 .user-level:before{
     content: url("../img/crown-icon.png");
@@ -3303,8 +3306,34 @@ body{
 }
 .pre-popup-photo, .next-popup-photo{display: none;}
 .hidden-complaint-message{display: none;}
-
-
+.sign-official-answer{
+    display: flex;
+    border: solid #D3E4FF 2px;
+    color: #4B98DF;
+    height: 30px;
+    width: 286px;
+    margin: 0px 0px 20px 20px;
+    border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+    background: url("../img/official-answer-icon.png") no-repeat 280px 4px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.official-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F8DD8;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #f5f5f5;
+    width: 122px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+}
 
 
 

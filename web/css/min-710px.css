@@ -140,3 +140,8 @@
     width: calc(100% -  48px);
 }
 .close-photo-popup{right: 10px;}
+.official-sign{
+    background: url("../img/sign-check.png") rgba(0, 0, 0, 0) no-repeat ;
+    width: 20px;
+    color: rgba(0, 0, 0, 0);
+}
