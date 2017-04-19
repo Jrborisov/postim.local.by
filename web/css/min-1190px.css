@@ -57,7 +57,8 @@
     width: calc(100% - 345px);
 }
 .block-description-card,
-.container-settings{
+.container-settings,
+.container-add-place{
     width: calc(100% - 355px);
 }
 .card-block,

@@ -28,7 +28,8 @@
 }
 .block-description-card,
 .container-post,
-.container-settings{
+.container-settings,
+.container-add-place{
     width: calc(100% - 40px);
 }
 .right-block{

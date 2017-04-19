@@ -142,8 +142,8 @@
         <div id="select-city-value" data-value="" class="select-value"><span class="placeholder-select">Выберите город</span></div>
           <div data-open-id="select-city" class="open-select-field"></div>
       </div>
-      <div id="select-city" class="container-scroll">
-        <div class="container-option-select">
+      <div id="select-city" class="container-scroll container-scroll-active">
+        <div class="container-option-select option-active">
           <div data-value="Минск" class="option-select-field">Минск</div>
           <div data-value="Брест" class="option-select-field">Брест</div>
           <div data-value="Витебск" class="option-select-field">Витебск</div>
@@ -165,8 +165,8 @@
         <div id="select-sex-value" data-value="" class="select-value"><span class="placeholder-select">Выберите пол</span></div>
         <div data-open-id="select-sex" class="open-select-field"></div>
       </div>
-      <div id="select-sex" class="container-scroll" style="max-height:55px">
-        <div class="container-option-select">
+      <div id="select-sex" class="container-scroll auto-height">
+        <div class="container-option-select option-active">
           <div data-value="1" class="option-select-field">Мужской</div>
           <div data-value="2" class="option-select-field">Женский</div>
         </div>
@@ -439,7 +439,7 @@
 <script type="text/javascript" src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('.container-scroll').mCustomScrollbar({scrollInertia: 200});
+        $('.container-scroll-active').mCustomScrollbar({scrollInertia: 200});
     });
 </script>
 <script>
@@ -459,7 +459,7 @@
             $('#' + id_block).removeClass('open-select');
         });
 
-        $(document).on('click','.option-select-field',function () {
+        $(document).on('click','.option-active .option-select-field',function () {
             var prntId = $(this).parents('.container-scroll').attr('id');
 
             var selectValue = $(this).data('value');
@@ -474,7 +474,7 @@
             $(this).data('value', preSelectValue);
             $(this).html(preSelectLabel);
             if(preSelectValue==''){
-                $($(this).parent()).prepend($(this));
+                $(this).remove()
             }
             $('#' + prntId + '-value').click();
 

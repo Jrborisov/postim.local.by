@@ -24,3 +24,8 @@
         align-items: center;
     }
 }
+@media (max-height: 480px) {
+    .container-popup-window{
+        top:0;
+    }
+}

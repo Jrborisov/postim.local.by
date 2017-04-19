@@ -287,3 +287,13 @@
     width: calc(100% - 20px);
     padding-left: 20px;
 }
+.day-name-min{
+    display: flex;
+}
+.day-name{
+    display: none;
+}
+.item-photo-from-gallery{
+    width: 280px;
+    margin-right: 0px;
+}
