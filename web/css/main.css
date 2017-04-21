@@ -1497,7 +1497,6 @@ body{
     font-size: 16px;
     font-family: PT_Sans bold;
     color: black;
-    z-index: 1000;
 }
 .block-reviews{
     margin-top: 30px;
