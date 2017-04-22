@@ -20,7 +20,8 @@
 .block-photos-owner,
 .block-issues,
 .block-сomments-post,
-.block-news-container{
+.block-news-container,
+.container-cards-promo{
     width: 100%
 }
 .block-info-for-owner{

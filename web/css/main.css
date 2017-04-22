@@ -3380,7 +3380,7 @@ body{
     cursor: pointer;
 }
 .option-select-field:hover{
-    color: #444444;
+    color: #4b98df;
 }
 .option-select-field:first-child{
     margin-top: 0px;
@@ -3424,7 +3424,7 @@ body{
     outline: none;
     border: none;
     width: 100%;
-    color: #6a768f;
+    color: #444444;
 }
 .block-search-address input::-webkit-input-placeholder{
     font-family: PT_Sans;
@@ -3465,8 +3465,8 @@ body{
 .block-input-contact input{
     outline: none;
     border: none;
-    width: calc(100% - 65px);
-    color: #6a768f;
+    width: calc(100% - 63px);
+    color: #444444;
 }
 .block-input-contact input::-webkit-input-placeholder{
     font-family: PT_Sans;
@@ -3575,7 +3575,7 @@ body{
     display: flex;
     height: 25px;
     width: 25px;
-    background-color: #c4c5c9;
+    background-color: #ffffff;
     border-radius: 13px;
     margin: 5px;
 }
@@ -3663,11 +3663,12 @@ body{
 .block-write-description textarea{
     margin-top: 20px;
     font-size: 16px;
-    color: #6b778f;
+    font-family: PT_Sans;
+    color: #444444;
     resize: none;
     border: none;
     outline: none;
-    max-height: 20px;
+    max-height: 22px;
 }
 .block-write-description textarea::-webkit-input-placeholder{
     font-family: PT_Sans;
@@ -3737,8 +3738,125 @@ body{
     float: left;
 }
 
+.container-cards-promo{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    max-width: 940px;
+}
+.card-promo{
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 0px 0px #cdced0;
+}
+.card-promo-photo{
+    min-width: 280px;
+    width: 280px;
+    display: block;
+    height: 140px;
+    background-position: center;
+    background-size: cover;
+}
+.block-promo-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.promo-info-header{
+    font-size: 20px;
+    color: #444444;
+    line-height: 24px;
+}
+.container-info-btn{
+    display: flex;
+}
+.container-promo-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.block-promo-btns{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.btn-print-promo:before{
+    display: flex;
+    content: '';
+    background-image:url("../img/icon-printer.png") ;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+.btn-print-promo:hover:before{
+    background-position: 20px 0px;
+}
+.promo-btn{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.promo-btn:last-child{
+    margin-right: 0px;
+}
+.btn-download-promo:before{
+    display: flex;
+    content: '';
+    background-image:url("../img/icon-download.png") ;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+.btn-download-promo:hover:before{
+    background-position: 20px 0px;
+}
 
+.btn-close-promo:before{
+    display: flex;
+    content: '';
+    background-image:url("../img/icon-close-promo.png") ;
+    background-position: 0px 0px;
+    width: 20px;
+    height: 20px;
+}
+.btn-close-promo:hover:before{
+    background-position: 20px 0px;
+}
 
+.promo-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo-info{
+    font-size: 16px;
+    color: #6b778f;
+    margin-top: 15px;
+    display: flex;
+}
+.promo-info span{
+    font-family: PT_Sans bold;
+    color: #444444;
+    margin-left: 5px;
+}
+.card-text-notice{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    color: #6b778f;
+}
+.text-pin{
+    display: flex;
+    margin-left: 10px;
+}
 
 
 

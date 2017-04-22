@@ -29,3 +29,14 @@
         top:0;
     }
 }
+
+@media (min-width: 940px) and (max-width: 1040px){
+    .container-info-btn{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .block-promo-btns{
+        margin-top: 20px;
+    }
+}
