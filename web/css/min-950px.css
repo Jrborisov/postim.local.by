@@ -21,7 +21,8 @@
 .block-issues,
 .block-сomments-post,
 .block-news-container,
-.container-cards-promo{
+.container-cards-promo,
+.container-promo-statistic{
     width: 100%
 }
 .block-info-for-owner{

@@ -51,7 +51,8 @@
 .block-issues,
 .block-сomments-post,
 .block-news-container,
-.container-cards-promo{
+.container-cards-promo,
+.container-promo-statistic{
     width: calc(100% - 315px);
 }
 .block-info-for-owner{

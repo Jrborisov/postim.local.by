@@ -14,18 +14,7 @@
   <link rel="stylesheet" media="(max-width:770px)" href="css/min-710px.css">
   <link rel="stylesheet" media="(max-width:540px)" href="css/min-540px.css">
   <link rel="stylesheet" media="(max-width:480px)" href="css/max-480px.css">
-  <!--яндекс карта-->
-  <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
-  <script type="text/javascript">
-	  var map;
-	  ymaps.ready(function(){
-		  map = new ymaps.Map("map_block", {
-			  center: [53.52, 28.20],
-			  zoom: 10
-		  });
-	  });
-  </script>
-  <!--яндекс карта-->
+  <link rel="stylesheet" href="css/main-media.css">
   <!-- адоптация для мобильный устройств-->
   <script>
 	  if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1
@@ -140,90 +129,91 @@
 </div>
 <!--верхнее меню end-->
 <div class="margin-top60"></div>
-<div id="map_block" class="block-map"></div>
 <div class="block-content">
   <div class="bread-crumb">
-    <a href="#">Главная</a>
+    <a class="pre" href="#">Главная</a>
     <span class="separator"></span>
-    <a href="#">Где поесть</a>
-    <span class="separator"></span>
-    <a  href="#">Рестораны</a>
-    <span class="separator"></span>
-    <a class="pre" href="#">Ресторан «Хижина Гранд»</a>
-    <span class="separator"></span>
-    <p>Фотографии</p>
+    <p>Заказы промокодов</p>
   </div>
-  <h1 class="h1-v">Ресторан «Хижина Гранд»</h1>
-  <div class="block-info-reviewsAndfavorites">
-    <div class="rating-b bg-r4">4</div>
-    <div class="count-reviews-text">38 отзывав</div>
-    <div class="add-favorite">Добавить в избранное</div>
-  </div>
+  <h1 class="h1-v">Заказы промокодов</h1>
 </div>
 <div class="block-flex-white">
   <div class="block-content">
     <div class="menu-btns-card">
-      <div class="btn2-menu">Информация</div>
-      <div class="btn2-menu">Фотографии 48</div>
-      <div class="btn2-menu">Отзывы 38</div>
-      <div class="btn2-menu">Скидки</div>
+      <div class="btn2-menu">Все 25</div>
+      <div class="btn2-menu">Использованые 20</div>
+      <div class="btn2-menu">Действующие 5</div>
     </div>
   </div>
 </div>
 
 <div class="block-content">
- <div class="block-photos-owner">
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-         <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-         <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-         <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-         <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-         <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-         <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="large-wide-button non-border fx-bottom"><p>Добавить фотографии</p></div>
- </div>
- <h2 class="h2-v">Фото посетителей</h2>
- <div class="block-photos-users">
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-       <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-       <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
-   <div class="container-photo" style="background-image: url('testP.png')">
-     <div class="block-blackout">
-       <img class="avatar-user" src="img/default-profile-icon.png">
-     </div>
-   </div>
- </div>
+  <div class="container-promo-statistic">
+    <div class="search-promo-statistic">
+      <input placeholder="Поиск по промокоду">
+    </div>
+    <div class="horizontal-scroll12">
+      <div class="block-sort-menu">
+        <a class="active">За все время</a>
+        <a>За сегодня</a>
+        <a>За вчера</a>
+        <a>За апрель</a>
+        <a>За март</a>
+      </div>
+      <div class="table-promo">
+        <div class="row-header">
+          <span class="r1">Название</span>
+          <span class="r2">Промокод</span>
+          <span class="r3">Куплен</span>
+          <span class="r4">Срок действия</span>
+          <span class="r5">Сумма,руб</span>
+          <span class="r6">Статус</span>
+        </div>
+        <div class="row-content">
+          <span class="r1">Название</span>
+          <span class="r2">321-312</span>
+          <span class="r3">12.12.2017</span>
+          <span class="r4">до 05.04.2015</span>
+          <span class="r5">13.4</span>
+          <span class="r6">-</span>
+        </div>
+        <div class="row-content">
+          <span class="r1">Название</span>
+          <span class="r2">321-312</span>
+          <span class="r3">12.12.2017</span>
+          <span class="r4">до 05.04.2015</span>
+          <span class="r5">13.4</span>
+          <span class="r6"><span class="close-promocode"></span></span>
+        </div>
+        <div class="row-content">
+          <span class="r1">fhjdskfhksd fjkdsf jkfds fjkdsh fjkds vncxjfd weuruwerds fkjdskljfkd sjfkldsjfkldjsklfj weoiru fdf</span>
+          <span class="r2">321-312</span>
+          <span class="r3">12.12.2017</span>
+          <span class="r4">до 05.04.2015</span>
+          <span class="r5">13.4</span>
+          <span class="r6">
+            <div class="block-promo-pin">
+              <div class="text-pin2">Пин-код</div>
+              <input>
+              <div class="btn-enter-pin">Ввод</div>
+            </div>
+          </span>
+        </div>
+        <div class="row-content">
+          <span class="r1"> fkdsl a dlksfj kdj fkjd klsj klfdj klfd sjkflj weoiuroi wj.xnvsnldk jkdsjfiewo r</span>
+          <span class="r2">321-312</span>
+          <span class="r3">12.12.2017</span>
+          <span class="r4">до 05.04.2015</span>
+          <span class="r5">13.4</span>
+          <span class="r6">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="large-wide-button non-border"><p>Показать больше заказов</p></div>
+  </div>
 </div>
+
 
 <div class="block-footer">
   <div class="block-footer-content">
@@ -306,71 +296,22 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.menu-content').mCustomScrollbar({scrollInertia: 50});
-       $('.photo-header').mCustomScrollbar({axis: "x",scrollInertia: 50, scrollbarPosition: "outside"});
+        $('.horizontal-scroll12').mCustomScrollbar({axis: "x",scrollInertia: 50});
     });
 </script>
 <!-- скрипты для кроссбраузерного скрола меню end -->
-
-<!--скрипт для всплывающего фото-->
 <script>
-  $(document).ready(function () {
-      var imgSize={height:null, width:null};
-      $(document).on('click','.container-photo',function () {
-          $('.container-blackout-photo-popup').css('display', 'block');
-          $('.photo-popup').css('display', 'flex');
-          $('body').css('overflow', 'hidden');
-
-          var imgUrl = $(this).css('background-image');
-          imgUrl = imgUrl.replace('url(','').replace(')','').replace(/\"/gi, "");
-          $('.photo-popup-item').attr('src', imgUrl);
-          imgSize.height = $(".photo-wrap img").height();
-          imgSize.width = $(".photo-wrap img").width();
-          resizePopupPhoto(imgSize.height, imgSize.width);
-          $('#mCSB_2_container').css('left', 0);
-      });
-
-      function resizePopupPhoto(height, width) {
-          if($('.photo-popup').css('display') != 'none'){
-              var wrapHeight = $(".photo-wrap").height();
-              var wrapWidth = $(".photo-wrap").width();
-
-              if(wrapHeight <= wrapWidth){
-                  if(height >= wrapHeight) $(".photo-wrap img").css({
-                      width: 'auto',
-                      height: wrapHeight
-                  }); else if(width >= wrapWidth) $(".photo-wrap img").css({
-                      width: wrapWidth,
-                      height: 'auto'
-                  });
-              }else{
-                  if(width >= wrapWidth) $(".photo-wrap img").css({
-                      width: wrapWidth,
-                      height: 'auto'
-                  }); else if(height >= wrapHeight) $(".photo-wrap img").css({
-                      width: 'auto',
-                      height: wrapHeight
-                  });
-              }
-              if($(".photo-wrap img").width() > wrapWidth) $(".photo-wrap img").css({
-                  width: wrapWidth,
-                  height: 'auto'
-              });
-              $('.pre-popup-photo, .next-popup-photo').css('height', $(".photo-wrap img").height());
-          }
+  $(document).on('click','.text-pin2',function () {
+      if(!$(this).parents('.block-promo-pin').hasClass('active')){
+          $('.block-promo-pin.active').removeClass('active');
+          $(this).parents('.block-promo-pin').addClass('active');
       }
-      $(window).bind('resize', imgSize, function (e) {
-          resizePopupPhoto(e.data.height, e.data.width);
-      });
 
-      $(document).on('click','.close-photo-popup',function () {
-          $('.container-blackout-photo-popup').css('display', 'none');
-          $('.photo-popup').css('display', 'none');
-          $('body').css('overflow', 'auto');
-      });
   })
-
-
+  $(document).click(function (e) {
+      if ($(e.target).closest(".block-promo-pin").length) return;
+      $('.block-promo-pin.active').removeClass('active');
+  })
 </script>
-<!--скрипт для всплывающего фото end-->
 </body>
 </html>
