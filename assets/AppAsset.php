@@ -18,7 +18,15 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'css/main.css',
+        ['css/jquery.mCustomScrollbar.css','media'=>'all'],
+        'css/jquery-ui.css',
+        ['css/min-1260px.css','media','(min-width: 1320px)'],
+        ['css/min-1190px.css','media','(max-width:1319px)'],
+        ['css/min-950px.css','media','(max-width:949px)'],
+        ['css/min-710px.css','media','(max-width:770px)'],
+        ['css/min-540px.css','media','(max-width:540px)'],
+        ['css/max-480px.css','media','(max-width:480px)'],
     ];
     public $js = [
     ];
